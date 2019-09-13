@@ -19,8 +19,8 @@
   			и инструментов для ремонта</em></p>
   			<p class="phone">+7 (812) 555-05-55</p>
   			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-  			<button type="button" class="btn">Войти</button>
-  			<button type="button" class="btn">Регистрация</button>
+  			<button type="button" class="account-btn">Войти</button>
+  			<button type="button" class="account-btn">Регистрация</button>
   	    </div>
   	    <nav class="menu">
   	    	<ul class="menu-list">
@@ -34,8 +34,155 @@
   	    	</ul>
   	    </nav>
   	</header>
+
   	<main>
-  		<!-- самый низ страницы -->
+      <h1>Основная информация</h1>
+      <section class="promo">
+        <h2>Меню каталога</h2>
+        <ul class="promo-list">
+          <li class="promo-element">
+            <h3 class="promo-element-name">Материалы</h3>
+            <a href="#" class="promo-btn">на любой вкус</a>
+            <span class="new">new</span>
+          </li>
+          <li class="promo-element">
+            <h3 class="promo-element-name">Инструмент</h3>
+            <a href="#" class="promo-btn">на все случаи</a>
+            <img src="#">
+          </li>
+          <li class="promo-element">
+            <h3 class="promo-element-name">Техника</h3>
+            <a href="#" class="promo-btn">для стройки</a>
+            <img src="#">
+          </li>
+          <li class="slider">
+            <div class="slider-text">
+              <h3 class="slider-name">Дрели</h3>
+              <p class="slider-description">Соседям на радость</p>
+            </div>
+            <a class="btn" href="catalog.html">Открыть каталог</a>
+          </li>
+          <li class="slider">
+            <div class="slider-text">
+              <h3 class="slider-name">Перфораторы</h3>
+              <p class="slider-description">Настоящие мужские игрушки</p>
+            </div>
+            <a class="btn" href="catalog.html">Открыть каталог</a>
+          </li>
+          <li class="promo-element">
+            <h3 class="promo-element-name">Скидки 50%</h3>
+            <a href="#" class="promo-btn">на 350 товаров</a>
+            <img src="#">
+          </li>
+          <li class="promo-element">
+            <h3 class="promo-element-name">Доставка</h3>
+            <a href="#" class="promo-btn">бесплатно</a>
+            <img src="#">
+          </li>
+        </ul>
+      </section>
+
+      <section class="popular-items">
+        <h2>Популярные товары:</h2>
+        <ul class="popular-items-list">
+          <li class="popular-item">
+            <h3 class="item-name">Перфоратор BOSCH BFG 9000</h3>
+            <p class="old-prise">32500 Р.</p>
+            <p class="price">22500 Р.</p>
+            <img src="#" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+          </li>
+          <li class="popular-item">
+            <h3 class="item-name">Перфоратор BOSCH BFG 3000</h3>
+            <p class="old-prise">22500 Р.</p>
+            <p class="price">15500 Р.</p>
+            <img src="img/perforator-1.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+          </li>
+          <li class="popular-item">
+            <h3 class="item-name">Перфоратор BOSCH BFG 6000</h3>
+            <p class="old-prise">30500 Р.</p>
+            <p class="price">22500 Р.</p>
+            <img src="img/perforator-2.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+          </li>
+          <li class="popular-item">
+            <h3 class="item-name">Перфоратор BOSCH BFG 2000</h3>
+            <p class="price">12500 Р.</p>
+            <img src="img/perforator-3.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+            <span class="new">new</span>
+          </li>
+        </ul>
+        <a class="btn" href="#">Все популярные товары</a>
+      </section>
+
+      <section class="popular-brands">
+        <h2>Популярные производители:</h2>
+        <ul>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="BOSCH">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="Makita">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="DeWALT">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="Интерскол">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="Hitachi">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="LG">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="AEG">
+            </a>
+          </li>
+          <li сlass="brand">
+            <a href="#">
+              <img src="#" alt="Metabo">
+            </a>
+          </li>
+        </ul>
+        <a class="btn" href="#">Все производители</a>
+      </section>
+
+      <section class="service">
+        <h2>Сервисы:</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <ul class="service-menu">
+          <li class="delivery">Доставка</li>
+          <li class="guarantee">Гарантия</li>
+          <li class="credit">Кредит</li>
+        </ul>
+        <section class="delivery-full">
+          <h3 class="service-name">Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        </section>
+        <section class="guarantee-full">
+          <h3 class="service-name">Гарантия</h3>
+          <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+        </section>
+        <section class="credit-full">
+          <h3 class="service-name">Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+          <a class="btn" href="#">Отправить заявку</a>
+        </section>
+      </section>
+
   		<div class="main-bot">
   			<section class="about">
   				<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
@@ -49,17 +196,18 @@
   					<li>Автотрейдинг</li>
   					<li>ЖелДорЭкспедиция</li>
   				</ul>
-  				<a href="#" class="inner-btn">Подробнее о компании</a>
+  				<a href="#" class="btn">Подробнее о компании</a>
   			</section>
   			<section class="map-adress">
   				<h2>КОНТАКТЫ</h2>
   				<p>Вы можете забрать товар сами,
   				заехав в наш офис:</p>
   				<a class="map" href="#"><img src="img/map.png" width="300" height="158" alt="карта"></a>
-  				<a href="#" class="inner-btn">Заблудились? Напишите нам!</a>
+  				<a href="#" class="btn">Заблудились? Напишите нам!</a>
   			</section>
   		</div>
   	</main>
+
   	<footer>
   		<div class="footer-top">
   			<div сlass="footer-top-first-line">
@@ -110,7 +258,5 @@
   			</p>
   		</section>
   	</footer>
-
-
   </body>
 </html>
