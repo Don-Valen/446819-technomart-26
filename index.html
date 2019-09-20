@@ -10,7 +10,7 @@
   			<a class="logo">Техномарт</a>
         <form method="get" action="#">
           <input type="search" value="Поиск:">
-          <input type="submit" name="send" value="Искать">
+          <button type="submit">Искать</button>
         </form>
   			<a href="#" class="bookmarks">Закладки:</a>
   			<a href="#" class="basket">Корзина:</a>
@@ -22,8 +22,8 @@
   			и инструментов для ремонта</em></p>
   			<p class="phone">+7 (812) 555-05-55</p>
   			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-  			<a class="account-btn">Войти</a>
-  			<a class="account-btn">Регистрация</a>
+  			<a class="account-btn" href="#">Войти</a>
+  			<a class="account-btn" href="#">Регистрация</a>
   	    </div>
   	    <nav class="menu">
   	    	<ul class="menu-list">
@@ -187,9 +187,9 @@
         <h2>Сервисы:</h2>
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <ul class="service-menu">
-          <li class="delivery">Доставка</li>
-          <li class="guarantee">Гарантия</li>
-          <li class="credit">Кредит</li>
+          <li class="delivery"><button type="button">Доставка</button></li>
+          <li class="guarantee"><button type="button">Гарантия</button></li>
+          <li class="credit"><button type="button">Кредит</button></li>
         </ul>
         <div>
           <section class="delivery-full">
@@ -220,27 +220,28 @@
   					<li>Деловые линии</li>
   					<li>Автотрейдинг</li>
   					<li>ЖелДорЭкспедиция</li>
-  				</ul>
+
+          </ul>
   				<a href="#" class="btn">Подробнее о компании</a>
   			</section>
   			<section class="map-adress">
   				<h2>КОНТАКТЫ</h2>
   				<p>Вы можете забрать товар сами,
   				заехав в наш офис:</p>
-  				<a class="map" href="#" aria-label="адрес в 2gis"><img src="img/map.png" width="300" height="158" alt="карта"></a>
+  				<a class="map" href="#" aria-label="адрес в 2gis"><img src="img/map.png" width="300" height="158" alt="Офис по адресу ул. Большая Конюшеннаяб 19/8"></a>
   				<a href="#" class="btn">Заблудились? Напишите нам!</a>
   			</section>
 
 
         <section class="modal-map">
           <h2 class="visually-hidden">Полнорзмерная карта</h2>
-          <img src="img/map.png" width="940" height="446" alt="развернутая карта">
+          <img src="img/map.png" width="940" height="446" alt="Офис по адресу ул. Большая Конюшеннаяб 19/8">
           <button type="button" aria-label="закрыть окно"></button>
         </section>
 
 
         <section class="modal-letter">
-          <h2>Написать письмо</h2>
+          <h2 class="visually-hidden">Написать письмо</h2>
           <form method="post" action="#">
             <p>
               <label for="client-name">Ваше имя:</label>
