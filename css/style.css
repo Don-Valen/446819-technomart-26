@@ -1,0 +1,437 @@
+body {
+  margin:0;
+  padding:0;
+
+  font-family: "Cuprum", Arial, sans serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+
+  background-color: #fff;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+header {
+  background-color: #f4f7f9;
+}
+
+header a {
+  color: #ffffff;
+}
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.logo {
+  text-align: center;
+
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.24);
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.search,
+.header-top form {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.search:hover,
+.header-top form:hover,
+.bookmarks:hover,
+.basket:hover {
+  background-color: #212a3a;
+}
+
+.search:focus,
+.header-top form:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+.order {
+  background-color: #63a63e;
+}
+
+.order:hover {
+  background-color: #5fbb2d;
+}
+
+.bookmarks:active,
+.basket:active,
+.order:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.bookmarks:active,
+.basket:active {
+  background-color: #161d29;
+}
+
+.order:active {
+  background-color: #518534;
+}
+
+.description {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  color: #ee3643;
+}
+
+.phone {
+  border: solid 3px #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.account-btn,
+.name {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.private {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.account-btn:hover,
+.private:hover {
+  color: #ee3643;
+}
+
+.account-btn:active,
+.name:active,
+.private:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+  box-shadow: 0px 5px 0 0 #293449;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-list a:hover,
+.navigation-list a:active {
+  background-color: #1d2739;
+}
+
+.navigation-list a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+/*Основние содержание*/
+
+
+
+.main-bot h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about p {
+  font-family: "PTSans", Arial, sans serif;
+}
+
+.about ul {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.btn {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.btn:hover {
+  background-color: #ca2c37;
+}
+
+.btn:active {
+  background-color: #ba2732;
+}
+
+.modal {
+  display: none;
+}
+
+
+/*каталог страница*/
+
+
+
+.way,
+.filter ul {
+  list-style: none;
+}
+
+.way a,
+.filter button {
+  font-family: "PTSans", Arial, sans serif;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.perforators h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+
+  background-color: #f2f6f8;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "PTSans", Arial, sans serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.manufacturer label,
+.supply label {
+  font-family: "PTSans", Arial, sans serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.items-list {
+  list-style: none;
+}
+
+.item {
+  border: 1px solid #e5e5e5;
+}
+
+.item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.item:hover .item-action {
+  display: block;
+}
+
+.item-name {
+  font-family: "PTSans", Arial, sans serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+}
+
+.old-price,
+.price {
+  font-family: "PTSans", Arial, sans serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+}
+
+.old-price {
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #ffffff;
+
+  background-image: url(img/red-button.svg);
+  background-repeat: no-repeat;
+  background-size: 141px 38px;
+  background-position: center;
+}
+
+.buy {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #63a63e;
+  box-shadow: 0px 3px 0 0 #367315;
+}
+
+.buy:hover {
+  background-color: #5fbb2d;
+}
+
+.buy:active {
+  background-color: #518534;
+  box-shadow: none;
+}
+
+.add-bookmark {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #32425c;
+  text-transform: uppercase;
+
+  border: 3px solid #63a63e;
+}
+
+.add-bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.add-bookmark:active {
+  color: rgba(50, 66, 92, 0.3);
+  border: 3px solid rgba(50, 66, 92, 0.3);
+}
+
+.about-perforator {
+  background-color: #f4f7f9;
+}
+
+.about-perforator h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-perforator p {
+  font-family: "PTSans", Arial, sans serif;
+}
+
+
+footer {
+  background-color: #32425c;
+}
+
+.footer-top {
+  font-size: 18px;
+}
+
+.footer-navigation,
+.footer-info {
+  list-style: none;
+  text-align: right;
+}
+
+.footer-navigation a {
+  color: #f1f5f7;
+}
+
+.footer-adress,
+.footer-phone {
+  color: #f3f7f9;
+}
+
+.footer-info a {
+  color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active,
+.footer-info a:active {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.footer-bot {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.socials a {
+  background-color: #212a3a;
+}
+
+.socials a:hover,
+.socials a:active {
+  background-color: #ee3643;
+}
+
+.email a,
+.developer a {
+  color: #ffd180;
+}
+.email a:hover,
+.developer a:hover {
+  text-decoration: underline;
+}
+
+.email a:active,
+.developer a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+
+
+
+
+
+
+
+
