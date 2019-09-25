@@ -16,7 +16,14 @@ a {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 header {
@@ -44,7 +51,6 @@ header a {
   vertical-align: middle;
 }
 
-
 .logo:hover {
   background-color: #ca2c37;
 }
@@ -57,6 +63,10 @@ header a {
 .header-top form {
   color: #ffffff;
   background-color: #293449;
+}
+
+.search {
+  border: none;
 }
 
 .search:hover,
@@ -297,7 +307,7 @@ header a {
 .price {
   color: #ffffff;
 
-  background-image: url(img/red-button.svg);
+  background-image: url(../img/red-button.svg);
   background-repeat: no-repeat;
   background-size: 141px 38px;
   background-position: center;
