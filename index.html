@@ -11,39 +11,49 @@
   <body>
   	<header>
   		<div class="header-top">
-  			<a class="logo"><img src="img/logo.svg" width="109px" height="19px" alt="Логотип Техномарта"></a>
-        <form method="get" action="#">
-          <button type="submit">Искать</button>
-          <input class="search" type="search" value="Поиск:">
-        </form>
-  			<a class="bookmarks" href="#">Закладки:</a>
-  			<a class="basket" href="#">Корзина:</a>
-  			<a class="order" href="#">Оформить заказ</a>
+
+          <a class="logo"><img src="img/logo.svg" width="109px" height="19px" alt="Логотип Техномарта"></a>
+          <form method="get" action="#">
+            <button type="submit">Искать</button>
+            <input class="search" type="search" value="Поиск:">
+          </form>
+          <a class="bookmarks" href="#">Закладки:</a>
+          <a class="basket" href="#">Корзина:</a>
+          <a class="order" href="#">Оформить заказ</a>
+
   		</div>
-  		<div class="header-mid">
-  			<p class="description"><em>Интернет-магазин
-  			строительных материалов
-  			и инструментов для ремонта</em></p>
-  			<p class="phone">+7 (812) 555-05-55</p>
-  			<p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-  			<a class="account-btn signin" href="#">Войти</a>
-  			<a class="account-btn register" href="#">Регистрация</a>
-  	  </div>
-  	  <nav class="navigation">
-  	    <ul class="navigation-list">
-  	    	<li><a href="index.html">Главная</a></li>
-  	    	<li><a href="#">Компания</a></li>
-  	    	<li><a href="catalog.html">Каталог</a></li>
-  	    	<li><a href="#">Новости</a></li>
-  	    	<li><a href="#">Спецпредложения</a></li>
-  	    	<li><a href="#">Доставка</a></li>
-  	    	<li><a href="#">Контакты</a></li>
-  	    </ul>
-  	  </nav>
+      <div class="container">
+  		  <div class="header-mid">
+          <p class="description"><em>Интернет-магазин
+          строительных материалов
+          и инструментов для ремонта</em></p>
+          <div class="wrapper">
+            <p class="phone">+7 (812) 555-05-55</p>
+            <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="account-container">
+            <a class="account-btn signin" href="#">Войти</a>
+            <a class="account-btn register" href="#">Регистрация</a>
+          </div>
+        </div>
+
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
   	</header>
 
-  	<main>
+  	<main class="container">
       <h1 class="visually-hidden">Основная информация</h1>
+
       <section class="promo">
         <h2 class="visually-hidden">Меню каталога</h2>
         <ul class="promo-list">
@@ -216,7 +226,7 @@
         </div>
       </section>
 
-  		<div class="main-bot">
+      <div class="main-bot">
   			<section class="about">
   				<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
 
@@ -231,15 +241,16 @@
           </ul>
   				<a class="btn" href="#">Подробнее о компании</a>
   			</section>
-  			<section class="map-adress">
+  			<section class="contacts">
   				<h2>КОНТАКТЫ</h2>
   				<p>Вы можете забрать товар сами,
   				заехав в наш офис:</p>
-  				<a class="map" href="#" aria-label="адрес в 2gis"><img src="img/map.png" width="300" height="158" alt="Офис по адресу ул. Большая Конюшеннаяб 19/8"></a>
+  				<a class="map" href="#" aria-label="адрес в 2gis"><img src="img/map@2x.png" width="300" height="158" alt="Офис по адресу ул. Большая Конюшеннаяб 19/8"></a>
   				<a class="btn" href="#" >Заблудились? Напишите нам!</a>
   			</section>
+      </div>
 
-
+      <div>
         <section class="modal modal-map">
           <h2 class="visually-hidden">Полнорзмерная карта</h2>
           <img src="img/map.jpg" width="940" height="446" alt="Офис по адресу ул. Большая Конюшеннаяб 19/8">
@@ -270,54 +281,58 @@
   	</main>
 
   	<footer>
-  		<div class="footer-top">
-  			<div сlass="footer-top-first">
-  				<a class="logo"><img src="img/logo.svg" width="109px" height="19px" alt="Логотип Техномарта"></a>
-  				<ul class="footer-navigation">
-  				  	<li><a href="#">Компания</a></li>
-  				  	<li><a href="#">Новости</a></li>
-  				  	<li><a href="catalog.html">Каталог</a></li>
-  				  	<li><a href="#">Доставка</a></li>
-  				  	<li><a href="#">Контакты</a></li>
-  				</ul>
-  			</div>
-  			<div сlass="footer-top-second">
-  				<p class="footer-adress">г. Санкт-Петербург,
-  				ул. Б. Конюшенная, д. 19/8</p>
-  				<p class="footer-phone">+7 (812) 555-05-55</p>
-  				<ul class="footer-info">
-  					<li><a href="#">Материалы</a></li>
-  					<li><a href="#">Техника</a></li>
-  					<li><a href="#">Инструмент</a></li>
-  					<li><a href="#">Спецпредложения</a></li>
-  				</ul>
-  			</div>
-  		</div>
+      <div class="footer-top">
+        <div class="container">
+      		<div сlass="footer-top1">
+      			<a class="logo footer-logo"><img src="img/logo.svg" width="138px" height="23px" alt="Логотип Техномарта"></a>
+      			<ul class="footer-navigation">
+      				<li><a href="#">Компания</a></li>
+      				<li><a href="#">Новости</a></li>
+      				<li><a href="catalog.html">Каталог</a></li>
+      				<li><a href="#">Доставка</a></li>
+      				<li><a href="#">Контакты</a></li>
+      			</ul>
+      		</div>
+      		<div сlass="footer-top2">
+      			<p class="footer-adress">г. Санкт-Петербург,
+      			ул. Б. Конюшенная, д. 19/8
+            +7 (812) 555-05-55</p>
+      			<ul class="footer-info">
+      				<li><a href="#">Материалы</a></li>
+      				<li><a href="#">Техника</a></li>
+      				<li><a href="#">Инструмент</a></li>
+      				<li><a href="#">Спецпредложения</a></li>
+      			</ul>
+      		</div>
+        </div>
+    	</div>
 
-  		<section class="footer-bot">
-  			<h2 class="visually-hidden">Контактная информация</h2>
-  			<p class="copyright">
-  			2010–2019 Компания
-  			«Техномарт»
-  			Все права защищены
-  			</p>
+    	<div class="footer-bot">
+        <section class="container">
+      		<h2 class="visually-hidden">Контактная информация</h2>
+      		<p class="copyright">
+      		© 2010–2019 Компания
+      		«Техномарт»
+      		Все права защищены
+      		</p>
 
-  			<div class="socials">
-  				<a class="social" href="http://vk.com" aria-label="Техномарт в вконтакте">вк</a>
-  				<a class="social" href="http://facebook.com" aria-label="Техномарт в фейсбуке">фб</a>
-  				<a class="social" href="http://instagram.com" aria-label="Техномарт в инстаграмме">инст</a>
-  			</div>
+      		<div class="socials">
+      			<a class="social" href="http://vk.com" aria-label="Техномарт в вконтакте">вк</a>
+      			<a class="social" href="http://facebook.com" aria-label="Техномарт в фейсбуке">фб</a>
+      			<a class="social" href="http://instagram.com" aria-label="Техномарт в инстаграмме">инст</a>
+      		</div>
 
-  			<p class="email">
-  				Обратная связь:
-  				<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-  			</p>
+      		<p class="email">
+      			Обратная связь:
+      			<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      		</p>
 
-  			<p class="developer">
-  				Разработано —
-  				<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-  			</p>
-  		</section>
+      		<p class="developer">
+      			Разработано —
+      			<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+      		</p>
+        </section>
+    	</div>
   	</footer>
   </body>
 </html>
