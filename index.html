@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="fonts/" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   	<header>
-  		<div class="header-top">
-
-          <a class="logo"><img src="img/logo.svg" width="109px" height="19px" alt="Логотип Техномарта"></a>
+  		<div class="header-color">
+        <div class="container header-top">
+          <a href="index.html" class="logo"><img src="img/logo.svg" width="109px" height="19px" alt="Логотип Техномарта"></a>
           <form method="get" action="#">
             <button type="submit">Искать</button>
             <input class="search" type="search" value="Поиск:">
           </form>
-          <a class="bookmarks" href="#">Закладки:</a>
-          <a class="basket" href="#">Корзина:</a>
-          <a class="order" href="#">Оформить заказ</a>
+          <a href="#" class="bookmarks">Закладки:</a>
+          <a href="#" class="basket">Корзина:</a>
+          <a href="#" class="order">Оформить заказ</a>
+        </div>
+      </div>
 
-  		</div>
       <div class="container">
   		  <div class="header-mid">
           <p class="description"><em>Интернет-магазин
@@ -51,10 +52,10 @@
       </div>
   	</header>
 
-  	<main class="container">
-      <h1 class="visually-hidden">Основная информация</h1>
+  	<main>
+      <h1 class="container visually-hidden">Основная информация</h1>
 
-      <section class="promo">
+      <section class="container promo">
         <h2 class="visually-hidden">Меню каталога</h2>
         <ul class="promo-list">
           <li class="promo-element">
@@ -103,7 +104,7 @@
         </ul>
       </section>
 
-      <section class="popular-items">
+      <section class="container popular-items">
         <h2>Популярные товары:</h2>
         <a class="btn" href="#">Все популярные товары</a>
         <ul class="items-list">
@@ -154,7 +155,7 @@
         </ul>
       </section>
 
-      <section class="popular-brands">
+      <section class="container popular-brands">
         <h2>Популярные производители:</h2>
         <a class="btn" href="#">Все производители</a>
         <ul>
@@ -201,32 +202,35 @@
         </ul>
       </section>
 
-      <section class="service">
-        <h2>Сервисы:</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="service-menu">
-          <li class="delivery"><button type="button">Доставка</button></li>
-          <li class="guarantee"><button type="button">Гарантия</button></li>
-          <li class="credit"><button type="button">Кредит</button></li>
-        </ul>
-        <div>
-          <section class="delivery-full">
-            <h3 class="service-name">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </section>
-          <section class="guarantee-full">
-            <h3 class="service-name">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-          </section>
-          <section class="credit-full">
-            <h3 class="service-name">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a class="btn" href="#">Отправить заявку</a>
-          </section>
-        </div>
-      </section>
+      <div class="service-color">
+        <section class="container service">
+          <h2>Сервисы:</h2>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <ul class="service-menu">
+            <li class="delivery"><button type="button">Доставка</button></li>
+            <li class="guarantee"><button type="button">Гарантия</button></li>
+            <li class="credit"><button type="button">Кредит</button></li>
+          </ul>
+          <div>
+            <section class="delivery-full">
+              <h3 class="service-name">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </section>
+            <section class="guarantee-full">
+              <h3 class="service-name">Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+            </section>
+            <section class="credit-full">
+              <h3 class="service-name">Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a class="btn" href="#">Отправить заявку</a>
+            </section>
+          </div>
+        </section>
+      </div>
 
-      <div class="main-bot">
+
+      <div class="container main-bot">
   			<section class="about">
   				<h2>КОМПАНИЯ "ТЕХНОМАРТ"</h2>
 
@@ -283,7 +287,7 @@
   	<footer>
       <div class="footer-top">
         <div class="container">
-      		<div сlass="footer-top1">
+      		<div class="footer-top1">
       			<a class="logo footer-logo"><img src="img/logo.svg" width="138px" height="23px" alt="Логотип Техномарта"></a>
       			<ul class="footer-navigation">
       				<li><a href="#">Компания</a></li>
@@ -293,7 +297,7 @@
       				<li><a href="#">Контакты</a></li>
       			</ul>
       		</div>
-      		<div сlass="footer-top2">
+      		<div class="footer-top2">
       			<p class="footer-adress">г. Санкт-Петербург,
       			ул. Б. Конюшенная, д. 19/8
             +7 (812) 555-05-55</p>

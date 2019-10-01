@@ -33,6 +33,12 @@ a {
   overflow: hidden;
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 header {
   height: 320px;
   background-color: #f4f7f9;
@@ -41,18 +47,20 @@ header {
 header a {
   color: #ffffff;
 }
-.header-top {
-  display: flex;
+
+.header-color {
   width: 100%;
   height: 42px;
-  margin: 0;
-  padding: 0;
+  background-color: #293449;
+}
+
+.header-top {
+  display: flex;
+  height: 42px;
   justify-content: center;
 
   font-size: 17px;
   line-height: 18px;
-
-  background-color: #293449;
 }
 
 .logo {
@@ -133,12 +141,6 @@ header a {
 
 .order:active {
   background-color: #518534;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0;
 }
 
 .header-mid {
@@ -227,6 +229,7 @@ header a {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -257,18 +260,26 @@ header a {
 
 /*Основние содержание*/
 
-.main-bot {
+.popular-items .items-list {
   display: flex;
-  height: 373px;
-  justify-content: space-between;
-  margin-top: 77px;
-  margin-bottom: 86px;
+  margin-right: 20px;
+}
 
+.popular-items .items-list:nth-child(4n) {
+  margin-right: 0;
+}
+
+.service-color {
   background-color: #f4f7f9;
 }
 
-.main-bot section {
-  background-color: #f9f5f0;
+
+
+.main-bot {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 77px;
+  margin-bottom: 86px;
 }
 
 .main-bot .about {
@@ -598,6 +609,7 @@ header a {
 .footer-navigation,
 .footer-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
   margin: 0;
@@ -618,6 +630,7 @@ header a {
 
 .footer-top2 {
   height: 44px;
+  margin-top: 30px;
 }
 
 .footer-adress {
@@ -707,8 +720,65 @@ header a {
   color: #ee3643;
 }
 
+@font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Cuprum.woff2')
+         format('woff2'),
+       url('../fonts/Cuprum.woff')
+         format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
 
+@font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Cuprumitalic.woff2')
+         format('woff2'),
+       url('../fonts/Cuprumitalic.woff')
+         format('woff');
+  font-style: italic;
+  font-weight: normal;
+}
 
+@font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Cuprumbold.woff2')
+         format('woff2'),
+       url('../fonts/Cuprumbold.woff')
+         format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Cuprum;
+  src: url('../fonts/Cuprumbolditalic.woff2')
+         format('woff2'),
+       url('../fonts/Cuprumbolditalic.woff')
+         format('woff');
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url('../fonts/PTSans.woff2')
+         format('woff2'),
+       url('../fonts/PTSans.woff')
+         format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: PTSans;
+  src: url('../fonts/PTSansbold.woff2')
+         format('woff2'),
+       url('../fonts/PTSansbold.woff')
+         format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
 
 
 
