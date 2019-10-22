@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -10,7 +11,7 @@
   	<header>
       <div class="header-color">
     		<div class="container header-top">
-    			<a href="index.html" class="logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта"></a>
+    			<a href="index.html" class="logo header-logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта"></a>
     			<form method="get" action="#">
             <input class="search" type="search" value="Поиск:">
             <button type="submit">
@@ -85,8 +86,8 @@
               <div class="begunok">
                 <div class="line">
                   <div class="active-line">
-                    <div class="radio-1" tabindex="-1"></div>
-                    <div class="radio-2" tabindex="-1"></div>
+                    <div class="radio-1" tabindex="0"></div>
+                    <div class="radio-2" tabindex="0"></div>
                   </div>
                 </div>
               </div>
@@ -171,8 +172,8 @@
                 <p class="price">15500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
               <li class="item">
@@ -184,8 +185,8 @@
                 <p class="price">25500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
               <li class="item">
@@ -197,8 +198,8 @@
                 <p class="price">12500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
                 <span class="new">Новинка</span>
               </li>
@@ -211,8 +212,8 @@
                 <p class="price">15500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
               <li class="item">
@@ -224,8 +225,8 @@
                 <p class="price">25500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
                 <span class="new">Новинка</span>
               </li>
@@ -238,8 +239,8 @@
                 <p class="price">12500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
               <li class="item">
@@ -251,8 +252,8 @@
                 <p class="price">15500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
                 <span class="new">Новинка</span>
               </li>
@@ -265,8 +266,8 @@
                 <p class="price">25500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
               <li class="item">
@@ -278,8 +279,8 @@
                 <p class="price">12500 Р.</p>
 
                 <div class="item-action">
-                	<a class="buy">Купить</a>
-                	<a class="add-bookmark">В закладки</a>
+                	<a class="buy" href="#">Купить</a>
+                	<a class="add-bookmark" href="#">В закладки</a>
                 </div>
               </li>
             </ul>
@@ -293,14 +294,16 @@
         </div>
       </div>
 
-      <section class="modal modal-add-item">
-        <h2>Товар добавлен в корзину!</h2>
-        <div class="modal-buttons">
-          <a class="btn checkout" href="#">Оформить заказ</a>
-          <a class="continue" href="#">Продолжить покупки</a>
-        </div>
-        <button class="close" type="button" aria-label="закрыть окно"></button>
-      </section>
+      <div class="container">
+        <section class="modal modal-add-item">
+          <h2>Товар добавлен в корзину!</h2>
+          <div class="modal-buttons">
+            <a class="btn checkout" href="#">Оформить заказ</a>
+            <a class="continue" href="#">Продолжить покупки</a>
+          </div>
+          <button class="close" type="button" aria-label="закрыть окно"></button>
+        </section>
+      </div>
 
 
       <div class="color-container">

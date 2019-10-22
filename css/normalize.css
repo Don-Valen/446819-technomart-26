@@ -222,6 +222,13 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText;
 }
 
+/*Добавляет курсор при наведении во всех браузерах*/
+
+button[type="button"],
+button[type="submit"] {
+  cursor: pointer;
+}
+
 /**
  * Correct the padding in Firefox.
  */
@@ -280,8 +287,20 @@ textarea {
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
+  -webkit-appearance: none; /*убирает стрелочки*/
+  margin: 0;
 }
 
+/*Убирает стрелочки в fierfox*/
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+/*input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+*/
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.

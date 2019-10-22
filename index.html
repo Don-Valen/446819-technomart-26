@@ -2,9 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
-    <link href="fonts/" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -12,7 +11,7 @@
   	<header>
   		<div class="header-color">
         <div class="container header-top">
-          <a href="index.html" class="logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта"></a>
+          <a href="index.html" class="logo header-logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта"></a>
           <form method="get" action="#">
             <input class="search" type="search" value="Поиск:">
             <button type="submit">
@@ -284,13 +283,12 @@
       </div>
 
       <div class="container">
-        <div class="modal">
-          <section class="modal modal-map">
-            <h2 class="visually-hidden">Полнорзмерная карта</h2>
-            <img src="img/map.jpg" width="940" height="446" alt="Офис по адресу ул. Большая Конюшенная 19/8">
-            <button class="close" type="button" aria-label="закрыть окно"></button>
-          </section>
-        </div>
+
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Полнорзмерная карта</h2>
+          <img src="img/map.jpg" width="940" height="446" alt="Офис по адресу ул. Большая Конюшенная 19/8">
+          <button class="close" type="submit" aria-label="закрыть окно"></button>
+        </section>
 
 
         <section class="modal modal-letter">

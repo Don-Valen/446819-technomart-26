@@ -100,6 +100,11 @@ img {
 
 .modal {
   position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translateY(-50%);
+
   display: none;
 
   background-color: #ffffff;
@@ -171,7 +176,9 @@ header a {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
 }
 
-.logo img {
+.header-logo img {
+  width: 109px;
+  height: 19px;
   margin: auto;
   margin-bottom: 16px;
 }
@@ -198,6 +205,8 @@ header a {
 
 .search + button {
   position: absolute;
+  top: 0;
+  left: 0;
   padding-top: 11px;
   padding-bottom: 10px;
   padding-left: 17px;
@@ -378,7 +387,7 @@ header a {
   padding-bottom: 9px;
   padding-left: 70px;
 
-  border: solid 3px #ffffff;
+  border: 3px solid #ffffff;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -734,8 +743,6 @@ header a {
 
 .slider .btn {
   width: 195px;
-  padding-left: 49px;
-  padding-right: 45px;
   margin-bottom: 22px;
   margin-left: 25px;
 }
@@ -876,7 +883,7 @@ header a {
   width: 220px;
   height: 145px;
 
-  border: solid 1px #eaeaea;
+  border: 1px solid #eaeaea;
 }
 
 .popular-brands img {
@@ -922,7 +929,7 @@ header a {
 
 .service p {
   margin: 0;
-  width: 398px;
+  width: 400px;
   font-family: "PTSans", "Arial", sans serif;
 }
 
@@ -957,6 +964,10 @@ header a {
   background-color: #32425c;
   border-bottom: 1px solid #293449;
   box-shadow: inset 0px 1px 0 0 #405069;
+}
+
+.service-list button:hover {
+  background-color: #293449;
 }
 
 .service-list .active {
@@ -1032,7 +1043,7 @@ header a {
 }
 
 .guarantee p {
-  width: 379px;
+  width: 382px;
 }
 
 .service .credit {
@@ -1044,8 +1055,8 @@ header a {
   opacity: 0;
 }
 
-.credit p {
-  width: 279px;
+.credit p + p {
+  width: 285px;
   margin-bottom: 25px;
 }
 
@@ -1120,7 +1131,7 @@ header a {
 }
 
 .contacts p {
-  width: 179px;
+  width: 185px;
   margin: 0;
   margin-bottom: 31px;
   font-family: "PTSans", "Arial", sans serif;
@@ -1138,9 +1149,6 @@ header a {
 }
 
 .modal-map {
-  top: 25px;
-  left: 50%;
-
   width: 940px;
   height: 446px;
   margin-left: -470px;
@@ -1164,9 +1172,6 @@ header a {
 }
 
 .modal-letter {
-  bottom: 201px;
-  left: 50%;
-
   width: 620px;
   height: 430px;
   margin: auto;
@@ -1200,7 +1205,7 @@ header a {
   color: #a9a9a9;
   line-height: 18px;
 
-  border: solid 2px #dee3e4;
+  border: 2px solid #dee3e4;
   border-radius: 3px;
 }
 
@@ -1473,7 +1478,6 @@ header a {
   height: 38px;
   padding-top: 9px;
   padding-bottom: 11px;
-  padding-left: 17px;
 
   font-family: "PTSans", "Arial", sans serif;
   font-size: 17px;
@@ -1592,7 +1596,7 @@ header a {
   padding-bottom: 7px;
   padding-left: 39px;
 
-  border: solid 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
 
@@ -1643,7 +1647,9 @@ header a {
   line-height: 18px;
   font-weight: normal;
   text-transform: uppercase;
-  text-decoration: underline #ee3643 dotted;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
 
   border: none;
   background-color: transparent;
@@ -1652,7 +1658,9 @@ header a {
 
 .sort button:hover {
   color: #000000;
-  text-decoration: underline #ee3643 solid;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: #ee3643;
   opacity: 1;
 }
 
@@ -1717,6 +1725,10 @@ header a {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
 
+.item:hover .item-action {
+  opacity: 1;
+}
+
 .item .image,
 .popular-item .image {
   width: 218px;
@@ -1762,8 +1774,7 @@ header a {
   margin-bottom: 21px;
   margin-left: 42px;
   padding: 10px 0;
-  padding-left: 36px;
-  padding-right: 40px;
+  text-align: center;
 
   color: #ffffff;
 
@@ -1796,7 +1807,6 @@ header a {
   opacity: 0;
 }
 
-.item-action:hover,
 .item-action .buy:hover::before {
   opacity: 1;
 }
@@ -1896,7 +1906,7 @@ header a {
   text-transform: uppercase;
   color: #000000;
 
-  border: solid 1px #e5e5e5;
+  border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
 
@@ -1908,7 +1918,7 @@ header a {
 }
 
 .numbering a:hover {
-  border: solid 1px #bdc6ca;
+  border: 1px solid #bdc6ca;
 }
 
 .numbering a:active {
@@ -1954,9 +1964,6 @@ header a {
 
 
 .modal-add-item {
-  top: 221px;
-  left: 50%;
-
   width: 640px;
   height: 282px;
   margin: auto;
@@ -2075,7 +2082,7 @@ header a {
 }
 
 .footer-adress {
-  width: 325px;
+  width: 326px;
   margin: 0;
   padding: 0;
   padding-left: 3px;
