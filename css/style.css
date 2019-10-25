@@ -379,9 +379,9 @@ header a {
 
 .phone {
   position: relative;
+  display: block;
   width: 100%;
   margin: 0;
-
   padding-top: 9px;
   padding-right: 49px;
   padding-bottom: 9px;
@@ -391,6 +391,7 @@ header a {
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  text-decoration: none;
 }
 
 .phone::before {
@@ -716,6 +717,8 @@ header a {
   position: relative;
   width: 620px;
   margin-right: 20px;
+
+  background-color: #000000;
 }
 
 .slider h3 {
@@ -1447,6 +1450,8 @@ header a {
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+
+  cursor: pointer;
 }
 
 .begunok .radio-1 {
@@ -1457,7 +1462,6 @@ header a {
   right: -7px;
 }
 
-
 .filter-price .price {
   display: flex;
   width: 220px;
@@ -1466,7 +1470,7 @@ header a {
   align-items: center;
 }
 
-.filter-price .price p {
+.filter-price .price div {
   width: 10px;
   height: 1px;
   margin: 0;
@@ -1644,30 +1648,27 @@ header a {
 
   font-family: "PTSans", "Arial", sans serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 1;
   font-weight: normal;
   text-transform: uppercase;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #ee3643;
 
   border: none;
+  border-bottom: 1px dotted #ee3643;
   background-color: transparent;
   opacity: 0.3;
 }
 
 .sort button:hover {
   color: #000000;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-color: #ee3643;
+
+  border-bottom: 1px solid #ee3643;
   opacity: 1;
 }
 
 .sort .active {
   color: #ee3643;
   opacity: 1;
-  text-decoration: none;
+  border: none;
 }
 
 .ascending {
@@ -2143,6 +2144,8 @@ header a {
   position: relative;
   width: 42px;
   height: 42px;
+  vertical-align: middle;
+
   border-radius: 50%;
   background-color: #212a3a;
 }
