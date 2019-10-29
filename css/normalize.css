@@ -296,11 +296,27 @@ textarea {
 input[type="number"] {
   -moz-appearance: textfield;
 }
-/*input[type="number"]:hover,
-input[type="number"]:focus {
-  -moz-appearance: number-input;
+
+/*Меняет цвет placeholder в mozila*/
+
+.search::-moz-placeholder {
+  color: #ffffff;
+  opacity: 1;
 }
-*/
+
+.search:focus::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.search:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.search:focus:-ms-input-placeholder {
+  color: #000000;
+}
+
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.

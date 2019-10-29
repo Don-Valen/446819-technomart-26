@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
   	<header>
@@ -13,10 +13,11 @@
         <div class="container header-top">
           <a
            class="logo header-logo"><img src="img/logo.svg" width="109" height="19" alt="Логотип Техномарта"></a>
-          <form method="get" action="#">
-            <input class="search" type="search" value="Поиск:">
+          <form class="search-form" method="get" action="#">
+            <label class="visually-hidden" for="search">Поиск</label>
+            <input class="search" type="search" id="search" name="search" placeholder="Поиск:">
             <button type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path fill=inherit d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
               <span class="visually-hidden">Искать</span>
             </button>
           </form>
@@ -29,7 +30,7 @@
       <div class="container">
   		  <div class="header-mid">
           <p class="description">Интернет-магазин
-          строительных материалов<br>и инструментов для ремонта</p>
+          строительных материалов и&nbsp;инструментов для ремонта</p>
           <div class="wrapper">
             <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -79,34 +80,36 @@
             </li>
           </ul>
 
-          <ul class="slider">
-            <li class="first-slide">
-              <div class="slider-text">
-                <h3 class="slider-name">Дрели</h3>
-                <p class="slider-description">Соседям на радость!</p>
-              </div>
-              <button class="slider-left-arrow" type="button" aria-label="влево"></button>
-              <button class="slider-right-arrow" type="button" aria-label="вправо"></button>
-              <a class="btn" href="catalog.html">Открыть каталог</a>
-              <div class="slider-dots">
-                <button class="slider-dot" type="button" aria-label="влево"></button>
-                <button class="active-dot slider-dot" type="button" aria-label="вправо"></button>
-              </div>
-            </li>
-            <li class="second-slide">
-              <div class="slider-text">
-                <h3 class="slider-name">Перфораторы</h3>
-                <p class="slider-description">Настоящие мужские игрушки</p>
-              </div>
-              <button class="slider-left-arrow" type="button" aria-label="влево"></button>
-              <button class="slider-right-arrow" type="button" aria-label="вправо"></button>
-              <a class="btn" href="catalog.html">Открыть каталог</a>
-              <div class="slider-dots">
-                <button class="active-dot slider-dot" type="button" aria-label="влево"></button>
-                <button class="slider-dot" type="button" aria-label="вправо"></button>
-              </div>
-            </li>
-          </ul>
+          <section class="slider">
+
+            <input class="dot1 visually-hidden" type="radio" name="dot" id="dot1" checked>
+            <input class="dot2 visually-hidden" type="radio" name="dot" id="dot2">
+
+            <div class="slider-dots">
+              <label for="dot1" aria-label="переключение на слайд 1"></label>
+              <label for="dot2" aria-label="переключение на слайд 2"></label>
+            </div>
+
+            <ul class="slider-list">
+              <li class="slide slide1" id="slide1">
+                <div class="slider-text">
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                </div>
+                <a class="btn" href="catalog.html">Открыть каталог</a>
+              </li>
+              <li class="slide slide2" id="slide2">
+                <div class="slider-text">
+                  <h3>Перфораторы</h3>
+                  <p>Настоящие мужские игрушки</p>
+                </div>
+                <a class="btn" href="catalog.html">Открыть каталог</a>
+              </li>
+            </ul>
+
+            <button class="slider-left-arrow" type="button" aria-label="влево"></button>
+            <button class="slider-right-arrow" type="button" aria-label="вправо"></button>
+          </section>
 
           <ul class="promo-list-2">
             <li class="promo-element">
@@ -132,8 +135,8 @@
             <p class="price">25500 Р.</p>
 
             <div class="item-action">
-              <a class="buy">Купить</a>
-              <a class="add-bookmark">В закладки</a>
+              <a class="buy" href="#">Купить</a>
+              <a class="add-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="item">
@@ -145,8 +148,8 @@
             <p class="price">15500 Р.</p>
 
             <div class="item-action">
-              <a class="buy">Купить</a>
-              <a class="add-bookmark">В закладки</a>
+              <a class="buy" href="#">Купить</a>
+              <a class="add-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="item">
@@ -158,8 +161,8 @@
             <p class="price">25500 Р.</p>
 
             <div class="item-action">
-              <a class="buy">Купить</a>
-              <a class="add-bookmark">В закладки</a>
+              <a class="buy" href="#">Купить</a>
+              <a class="add-bookmark" href="#">В закладки</a>
             </div>
           </li>
           <li class="item">
@@ -171,8 +174,8 @@
             <p class="price">12500 Р.</p>
 
             <div class="item-action">
-              <a class="buy">Купить</a>
-              <a class="add-bookmark">В закладки</a>
+              <a class="buy" href="#">Купить</a>
+              <a class="add-bookmark" href="#">В закладки</a>
             </div>
             <span class="new">Новинка</span>
           </li>
@@ -231,10 +234,14 @@
           <h2>Сервисы:</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="wrapper">
+            <input class="delivery-toggle visually-hidden" type="radio" name="service-toggle" id="delivery" checked>
+            <input class="guarantee-toggle visually-hidden" type="radio" name="service-toggle" id="guarantee">
+            <input class="credit-toggle visually-hidden" type="radio" name="service-toggle" id="credit">
+
             <ul class="service-list">
-              <li><button class="active" type="button">Доставка</button></li>
-              <li><button type="button">Гарантия</button></li>
-              <li><button type="button">Кредит</button></li>
+              <li><label for="delivery">Доставка</label></li>
+              <li><label for="guarantee">Гарантия</label></li>
+              <li><label for="credit">Кредит</label></li>
             </ul>
             <div>
               <section class="delivery">
@@ -279,43 +286,53 @@
   				<p>Вы можете забрать товар сами,
   				заехав в наш офис:</p>
   				<a class="map" href="#" aria-label="адрес в 2gis"><img src="img/map.png" width="300" height="158" alt="Офис по адресу ул. Большая Конюшеннаяб 19/8"></a>
-  				<a class="btn" href="#" >Заблудились? Напишите нам!</a>
+  				<a class="btn writeus" href="#" >Заблудились? Напишите нам!</a>
   			</section>
       </div>
 
-      <div class="container">
-
-        <section class="modal modal-map">
-          <h2 class="visually-hidden">Полнорзмерная карта</h2>
-          <img src="img/map.jpg" width="940" height="446" alt="Офис по адресу ул. Большая Конюшенная 19/8">
-          <button class="close" type="submit" aria-label="закрыть окно"></button>
-        </section>
 
 
-        <section class="modal modal-letter">
-          <h2 class="visually-hidden">Написать письмо</h2>
-          <form method="post" action="#">
-            <div class="form">
-              <p>
-                <label for="client-name">Ваше имя:</label>
-                <input type="text" name="client-name" id="client-name" placeholder="Имя Фамилия">
-              </p>
-              <p>
-                <label for="client-email">Ваш e-mail:</label>
-                <input type="email" name="client-email" id="client-email" placeholder="email@example.com">
-              </p>
-              <p class="message">
-                <label for="message">Текст письма:</label>
-                <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
-              </p>
-            </div>
-            <div class="button-back">
-              <button class="btn" type="submit">Отправить</button>
-            </div>
-          </form>
-          <button class="close" type="button" aria-label="закрыть окно"></button>
-        </section>
-  		</div>
+      <section class="modal modal-add-item">
+        <h2>Товар добавлен в корзину!</h2>
+        <div class="modal-buttons">
+          <a class="btn checkout" href="basket.html">Оформить заказ</a>
+          <a class="continue" href="#">Продолжить покупки</a>
+        </div>
+        <button class="close" type="button" aria-label="закрыть окно"></button>
+      </section>
+
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Полнорзмерная карта</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002806!2d30.320858715677204!3d59.93871916905467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1572243725110!5m2!1sru!2sru" width="940" height="446" allowfullscreen=""></iframe>
+        <img src="img/map.jpg" width="940" height="446" alt="Офис по адресу ул. Большая Конюшенная 19/8">
+        <button class="close" type="submit" aria-label="закрыть окно"></button>
+      </section>
+
+
+      <section class="modal modal-letter">
+        <h2 class="visually-hidden">Написать письмо</h2>
+        <form method="post" action="#">
+          <div class="form">
+            <p>
+              <label for="client-name">Ваше имя:</label>
+              <input type="text" name="client-name" id="client-name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="client-email">Ваш e-mail:</label>
+              <input type="email" name="client-email" id="client-email" placeholder="email@example.com">
+            </p>
+            <p class="message">
+              <label for="message">Текст письма:</label>
+              <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <div class="button-back">
+            <button class="btn" type="submit">Отправить</button>
+          </div>
+        </form>
+        <button class="close" type="button" aria-label="закрыть окно"></button>
+      </section>
+
   	</main>
 
   	<footer>
@@ -332,9 +349,11 @@
       			</ul>
       		</div>
       		<div class="footer-top2">
-      			<p class="footer-adress">г. Санкт-Петербург,
-      			ул. Б. Конюшенная, д. 19/8
-            +7 (812) 555-05-55</p>
+      			<div class="wrapper">
+              <p class="footer-adress">г. Санкт-Петербург,
+        			ул. Б. Конюшенная, д. 19/8</p>
+              <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
       			<ul class="footer-info">
       				<li><a href="#">Материалы</a></li>
       				<li><a href="#">Техника</a></li>
@@ -372,5 +391,11 @@
         </section>
     	</div>
   	</footer>
+
+    <script src="js/buy-min.js"></script>
+    <script src="js/map-min.js"></script>
+    <script src="js/letter-min.js"></script>
+    <script src="js/slider-control-min.js"></script>
+
   </body>
 </html>

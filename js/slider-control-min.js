@@ -1,0 +1,1 @@
+var leftArrow=document.querySelector(".slider-left-arrow"),rightArrow=document.querySelector(".slider-right-arrow"),slider1=document.querySelector(".dot1"),slider2=document.querySelector(".dot2");leftArrow.addEventListener("click",function(e){slider1.checked||(slider1.checked=!0)}),rightArrow.addEventListener("click",function(e){slider1.checked&&(slider2.checked=!0)});
